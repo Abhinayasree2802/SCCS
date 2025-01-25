@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='../styles/style.css' />
+    <title>SCCS</title>
+ 
+</head>
+<style>
+    body{
+        background-color: #222D32;
+    }
+    input[type=text] {
+    background-color: #1A2226;
+    border: none;
+    border-bottom: 2px solid #0DB8DE;
+
+    color: #ECF0F5;
+    width:300px;
+    height:50px;
+    font-size: 13pt;
+    }
+    input[type=password] {
+    background-color: #1A2226;
+    border: none;
+    border-bottom: 2px solid #0DB8DE;
+    font-weight: bold;
+    color: #ECF0F5;
+    width:300px;
+    height:50px;
+    font-size: 13pt;
+}
+</style>
+<body style="background-image: url('https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); background-repeat: no-repeat; background-size: cover;">
+    <div class="topnav" style="background-image:url('https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); background-size: cover;">
+        <a href="/home"  class="split" style="float: left;
+        border:solid 1px black; border-radius: 5px;"><b>Home</b></a>
+    </div> 
+    <div class="login-box" style=" border-radius: 30px; padding-top: 7px;padding-left: 7px; padding-right: 7px; padding-bottom: 0px;">
+    <h2 style="color: white; padding-top: 15px; padding-bottom: 5px; letter-spacing: 2px; font-family:'Times New Roman', Times, serif; ">USER LOGIN</h2>
+    
+    <div class="login">    
+    <form id="ulogin" method="POST" action="/ulogin">
+        <% if (locals.error) { %>
+            <div style="color: red;"><%= error %></div>
+        <% } %>
+        <div class="form-group">   
+        <label class="form-control-label"><b>Username</b></label> <br>  
+        <input type="text" name="U_ID" id="U_ID" class="form-control">    
+        </div> 
+        <br>
+        <div class="form-group">
+        <label class="form-control-label"><b>Password</b></label><br>
+        <input type="password" name="UPassword" id="UPassword" class="form-control">    
+        </div>
+        
+        
+        <input type="submit" name="log" id="log" value="Log In" class="btn-outline-primary" style="border-radius: 10px; font-size:medium; padding: 3px 10px 10px 10px;"> 
+        <p class="message" style="color: white;">Not registered?&ensp;  &ensp; <a href="/register">Create an account</a></p>
+            
+        <br><br>    
+    </form>     
+    </div>
+</div>
+</body>
+</html>

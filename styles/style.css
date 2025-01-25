@@ -1,0 +1,114 @@
+.topnav {
+    overflow: hidden;
+    background-color: #0e2150;
+    font-family:Arial, Helvetica, sans-serif;
+
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  .topnav a.split {
+    float: right;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  html{
+	height: 100%;
+}
+
+body {
+    height: 100%;
+	margin: 0;
+	background: linear-gradient(45deg, #49a09d, #5f2c82);
+	font-family: sans-serif;
+	font-weight: 100;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-image:url('https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2050&q=80');
+    background-repeat: no-repeat;
+    background-size:cover; */
+}
+
+
+.login-box {
+    margin-top: 150px;
+    height: auto;
+    background: #1A2226;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    width: 30%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 85%;
+}
+
+.form-group {
+    margin-bottom: 40px;
+    outline: 0px;
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 2px solid #0DB8DE;
+    outline: 0;
+    background-color: #1A2226;
+    color: #ECF0F5;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0;
+}
+
+.form-control-label {
+    font-size: 14px;
+    color: #6C6C6C;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+.btn-outline-primary {
+  border-color: #0DB8DE;
+  color: #0DB8DE;
+  background-color: #1A2226;
+  border-radius: 0px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height:30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.btn-outline-primary:hover {
+  background-color: #0DB8DE;
+  color: #fff;
+  right: 0px;
+}
+
+.FORM{
+  padding-left: 20px;
+  font-size: large;
+}
